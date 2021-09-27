@@ -29,16 +29,16 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <div id="0700" class="row time-block">
+      <div id="hour-0700" class="row time-block">
         <div class="col-md-1 hour">
-            0700
+           0700
         </div>
         <textarea class="col-md-10 description">
         </textarea>
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>     
 
-      <div id="0800" class="row time-block">
+      <div id="hour-0800" class="row time-block">
         <div class="col-md-1 hour">
             0800
         </div>
@@ -47,7 +47,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="0900" class="row time-block">
+<div id="hour-0900" class="row time-block">
         <div class="col-md-1 hour">
             0900
         </div>
@@ -56,7 +56,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1000" class="row time-block">
+<div id="hour-1000" class="row time-block">
         <div class="col-md-1 hour">
             1000
         </div>
@@ -65,7 +65,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1100" class="row time-block">
+<div id="hour-1100" class="row time-block">
         <div class="col-md-1 hour">
             1100
         </div>
@@ -74,7 +74,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1200" class="row time-block">
+<div id="hour-1200" class="row time-block">
         <div class="col-md-1 hour">
             1200
         </div>
@@ -83,7 +83,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1300" class="row time-block">
+<div id="hour-1300" class="row time-block">
         <div class="col-md-1 hour">
             1300
         </div>
@@ -92,7 +92,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1400" class="row time-block">
+<div id="hour-1400" class="row time-block">
         <div class="col-md-1 hour">
             1400
         </div>
@@ -101,7 +101,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1500" class="row time-block">
+<div id="hour-1500" class="row time-block">
         <div class="col-md-1 hour">
             1500
         </div>
@@ -110,7 +110,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1600" class="row time-block">
+<div id="hour-1600" class="row time-block">
         <div class="col-md-1 hour">
             1600
         </div>
@@ -119,7 +119,7 @@
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
 
-<div id="1700" class="row time-block">
+<div id="hour-1700" class="row time-block">
         <div class="col-md-1 hour">
             1700
         </div>
@@ -127,6 +127,16 @@
         </textarea>
         <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
+
+<div id="hour-1800" class="row time-block">
+      <div class="col-md-1 hour">
+          1800
+      </div>
+      <textarea class="col-md-10 description">
+      </textarea>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+  </div>
+    
 
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -181,17 +191,18 @@ $(document).ready(function () {
     }
 
     // Get item from local storage if any
-    $("#0700 .description").val(localStorage.getItem("0700"));
-    $("#0800 .description").val(localStorage.getItem("0800"));
-    $("#0900 .description").val(localStorage.getItem("0900"));
-    $("#1000 .description").val(localStorage.getItem("1000"));
-    $("#1100 .description").val(localStorage.getItem("1100"));
-    $("#1200 .description").val(localStorage.getItem("1200"));
-    $("#1300 .description").val(localStorage.getItem("1300"));
-    $("#1400 .description").val(localStorage.getItem("1400"));
-    $("#1500 .description").val(localStorage.getItem("1500"));
-    $("#1600 .description").val(localStorage.getItem("1600"));
-    $("#1700 .description").val(localStorage.getItem("1700"));
+    $("#hour-0700 .description").val(localStorage.getItem("hour-0700"));
+    $("#hour-0800 .description").val(localStorage.getItem("hour-0800"));
+    $("#hour-0900 .description").val(localStorage.getItem("hour-0900"));
+    $("#hour-1000 .description").val(localStorage.getItem("hour-1000"));
+    $("#hour-1100 .description").val(localStorage.getItem("hour-1100"));
+    $("#hour-1200 .description").val(localStorage.getItem("hour-1200"));
+    $("#hour-1300 .description").val(localStorage.getItem("hour-1300"));
+    $("#hour-1400 .description").val(localStorage.getItem("hour-1400"));
+    $("#hour-1500 .description").val(localStorage.getItem("hour-1500"));
+    $("#hour-1600 .description").val(localStorage.getItem("hour-1600"));
+    $("#hour-1700 .description").val(localStorage.getItem("hour-1700"));
+    $("#hour-1800 .description").val(localStorage.getItem("hour-1800"));
 
     timeTracker();
 })
